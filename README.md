@@ -3,7 +3,7 @@
 
 
 
-## 
+###
 ```javascript
 <template>
   <FormElleMain 
@@ -48,4 +48,14 @@
   }
 </script>       
 
+```
+
+### Built In Validation
+```javascript
+ <FormElleInput
+        id="Name"
+        type="text"  
+        v-model="frm.name"
+        required
+      />      
 ```
