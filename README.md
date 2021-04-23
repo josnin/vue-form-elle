@@ -15,16 +15,8 @@
         type="text"  
         v-model="frm.name"
         required
-      />
-      
-      <FormElleTextArea          
-         v-model="frm.http_headers"
-         id="headers"
-         label="HTTP Headers"
-         placeholder="Add Multiple HTTP headers in json format"
-         help="example: { Authorization: 'Basic AfgasdwQDU1dzByYM==' }"
-      />
-        
+      />      
+         
       <button @click.prevent="create()" :disabled="!isValid">
         Save
       </button>
