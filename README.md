@@ -50,7 +50,7 @@
 
 ```
 
-### Built In Validation
+### Built In Validation using the Javascript Validation API
 
 #### code
 ```javascript
@@ -63,5 +63,5 @@
 ```
 
 #### output
-![image](https://user-images.githubusercontent.com/3206118/115892200-82fc9c00-a489-11eb-8adc-bf2920cc1d45.png)
+![image](https://user-images.githubusercontent.com/3206118/115892200-82fc9c00-a489-11eb-8adc-bf2920cc1d45.png){ width: 100px; }
 
