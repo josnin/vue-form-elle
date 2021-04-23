@@ -6,18 +6,18 @@
 ## 
 ```javascript
 <template>
-  <FormMain 
+  <FormElleMain 
     v-model="frm"    
     #default="{ isValid }" 
   >
-      <FormInput
+      <FormElleInput
         id="Name"
         type="text"  
         v-model="frm.name"
         required
       />
       
-      <FormTextarea          
+      <FormElleTextArea          
          v-model="frm.http_headers"
          id="headers"
          label="HTTP Headers"
@@ -29,20 +29,20 @@
         Save
       </button>
    
-  </FormMain>
+  </FormElleMain>
  </template> 
         
  <script>
   import { ref } from 'vue';
   import { 
-      FormInput, 
-      FormMain 
+      FormElleInput, 
+      FormElleMain 
   } from '../components/forms';
   export default {
     name: "MyComponent",
     components: {
-      FormInput,
-      FormMain
+      FormElleInput,
+      FormElleMain
     },
     async setup() {
       const frm = ref({
