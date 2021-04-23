@@ -63,5 +63,5 @@
 ```
 
 #### output
-![image](https://user-images.githubusercontent.com/3206118/115892200-82fc9c00-a489-11eb-8adc-bf2920cc1d45.png){ width: 100px; }
+![image](https://user-images.githubusercontent.com/3206118/115892982-47ae9d00-a48a-11eb-8b32-fc122ac16a23.png)
 
