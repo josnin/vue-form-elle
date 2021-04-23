@@ -65,3 +65,25 @@
 #### output
 ![image](https://user-images.githubusercontent.com/3206118/115892982-47ae9d00-a48a-11eb-8b32-fc122ac16a23.png)
 
+
+
+### Custom Validation & Message
+#### code
+```javascript
+        <FormElleInput        
+          id="Name"
+          type="text"       
+          v-model="frm.name"        
+          :validation-custom="{
+            foundElle: (value) => ['elle'].includes(value)
+          }"
+          :validation-message="{
+            foundElle: 'Oh no! message contains Elle??'
+          }" 
+        />
+```
+
+#### output
+![image](https://user-images.githubusercontent.com/3206118/115893816-331ed480-a48b-11eb-90a3-0ad8ebfb7252.png)
+
+
