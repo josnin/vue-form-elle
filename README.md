@@ -51,6 +51,8 @@
 ```
 
 ### Built In Validation
+
+#### code
 ```javascript
  <FormElleInput
         id="Name"
@@ -59,3 +61,7 @@
         required
       />      
 ```
+
+#### output
+![image](https://user-images.githubusercontent.com/3206118/115892200-82fc9c00-a489-11eb-8adc-bf2920cc1d45.png)
+
