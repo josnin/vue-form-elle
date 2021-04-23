@@ -5,6 +5,7 @@
 
 ## 
 ```javascript
+<template>
   <FormMain 
     v-model="frm"    
     #default="{ isValid }" 
@@ -29,7 +30,30 @@
       </button>
    
   </FormMain>
+ </template> 
         
-        
+ <script>
+  import { ref } from 'vue';
+  import { 
+      FormInput, 
+      FormMain 
+  } from '../components/forms';
+  export default {
+    name: "MyComponent",
+    components: {
+      FormInput,
+      FormMain
+    },
+    async setup() {
+      const frm = ref({
+        name: "",
+      })
+
+      return {
+        frm,
+      }
+    }
+  }
+</script>       
 
 ```
