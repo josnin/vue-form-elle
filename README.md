@@ -4,7 +4,7 @@
 
 
 ## 
-```
+```javascript
   <FormMain 
     v-model="frm"    
     #default="{ isValid }" 
