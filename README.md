@@ -49,7 +49,7 @@
 
 ```
 
-### Built In Validation using the Javascript Validation API
+### Builtin Validation using the Javascript Validation API
 
 #### code
 ```javascript
