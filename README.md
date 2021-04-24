@@ -3,15 +3,14 @@
 
 
 
-###
+### Usage
 ```javascript
 <template>
   <FormElleMain 
     v-model="frm"    
     #default="{ isValid }" 
   >
-      <FormElleInput
-        id="Name"
+      <FormElleInput       
         type="text"  
         v-model="frm.name"
         required
@@ -54,8 +53,7 @@
 
 #### code
 ```javascript
- <FormElleInput
-        id="Name"
+ <FormElleInput   
         type="text"  
         v-model="frm.name"
         required
@@ -70,8 +68,7 @@
 ### Custom Validation & Message
 #### code
 ```javascript
-        <FormElleInput        
-          id="Name"
+        <FormElleInput     
           type="text"       
           v-model="frm.name"        
           :validation-custom="{
