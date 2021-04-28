@@ -76,6 +76,20 @@ export const props1 = {
   inputClass: {
     type: String as PropType<string>
   },
+  rows: {
+    type: Number as PropType<number>,
+    default: 4
+  },
+  cols: {
+    type: Number as PropType<number>,
+    default: 30
+  },
+  textareaClass: {
+    type: String as PropType<string>
+  },
+  options: {
+    type: Object as PropType<any>
+  },
   divClass: {
     type: String as PropType<string>
   },
