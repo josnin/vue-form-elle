@@ -1,27 +1,27 @@
 <template>
 
-  <div :class="divClass || styling?.FormElleInput?.divClass || styling?.divClass || null">
+  <div :class="divClass || styling?.FormElleInput?.divClass || styling?.divClass">
     <label 
       v-if="id && !label" 
-      :class="labelClass || styling?.FormElleInput?.labelClass || styling?.labelClass || null"
+      :class="labelClass || styling?.FormElleInput?.labelClass || styling?.labelClass"
       :for="id"
     >{{id}}</label>
 
     <label 
       v-if="id && label" 
-      :class="labelClass || styling?.FormElleInput?.labelClass || styling?.labelClass || null"
+      :class="labelClass || styling?.FormElleInput?.labelClass || styling?.labelClass"
       :for="id"
     >{{label}}</label>
 
     <input 
-      :class="inputClass || styling?.FormElleInput?.inputClass || styling?.elementsClass || null"
+      :class="inputClass || styling?.FormElleInput?.inputClass || styling?.elementsClass"
       v-bind="$attrs"
       :id="id" 
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     >
-    <span :class="validationClass || styling?.FormInput?.validationClass || styling?.validationClass || null" v-if="valMsg">{{valMsg}}</span>
-    <span :class="helpClass || styling?.FormElleInput?.helpClass || styling?.helpClass || null" v-if="help && !valMsg">{{help}}</span>
+    <span :class="validationClass || styling?.FormInput?.validationClass || styling?.validationClass" v-if="valMsg">{{valMsg}}</span>
+    <span :class="helpClass || styling?.FormElleInput?.helpClass || styling?.helpClass" v-if="help && !valMsg">{{help}}</span>
   </div>
 
 </template>
@@ -71,7 +71,7 @@ export default /*#__PURE__*/defineComponent({
       }
   }
   setup(props: any) {
-    const frm = inject('__frmMain') as any;
+    const frm = inject<any>('__frmMain');
     let valMsg = ref<any>('');
     const styling = computed(() => frm.styling)
     const { modelValue } = toRefs(props)
@@ -87,7 +87,7 @@ export default /*#__PURE__*/defineComponent({
       }
     }
 
-    const setValMsg = () => {
+    const setValMsg = (): void => {
       valMsg.value = '';
       if (props.validationMessage && !props.validationCustom) {
         Array.prototype.forEach.call(frm.frm._value.elements, function(element) {
