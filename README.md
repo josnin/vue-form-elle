@@ -1,6 +1,5 @@
 # vue-form-elle
-## An easy way to create a form in your Vue3 project
-
+## An easy way to create a form in your Vue3 project with TypeScript support
 
 
 ### Usage
